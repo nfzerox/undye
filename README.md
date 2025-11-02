@@ -1,11 +1,9 @@
-# Requirements and Limitations
-For this to work, you need to turn off FileVault, then run `csrutil disable` and `csrutil authenticated-root disable` in recoveryOS.
-
-Tested on macOS 26.0 (25A354) and macOS 26.1 beta (25B5042k). This script will replace your current Dock with an older Dock pre-extracted from macOS 26.0 beta 4, and installs Launchpad pre-extracted from macOS 26.0 beta 3. During installation, this script prints signing information from these pre-extracted apps so you can confirm they are authentic.
-
 # Usage
-1. Download [launchbad-revived](https://codeload.github.com/nfzerox/launchbad-revived/zip/refs/heads/main) and unzip it
-2. Open Terminal and run `~/Downloads/launchbad-revived-main/run`
+1. [Turn off System Integrity Protection](https://developer.apple.com/documentation/security/disabling-and-enabling-system-integrity-protection) by running `csrutil disable` in recoveryOS
+2. Download [launchbad-revived](https://codeload.github.com/nfzerox/launchbad-revived/zip/refs/heads/main) and unzip it
+3. Open Terminal and run `~/Downloads/launchbad-revived-main/run`
+
+Tested on macOS 26.0 (25A354) and macOS 26.1 (25B77). This script will replace your current Dock with an older Dock pre-extracted from macOS 26.0 beta 4, and installs Launchpad pre-extracted from macOS 26.0 beta 3. During installation, this script prints signing information from these pre-extracted apps so you can confirm they are authentic. To uninstall, run `~/Downloads/launchbad-revived-main/run` again.
 
 # Screenshot
 <img width="1920" alt="Launchpad" src="https://github.com/user-attachments/assets/2e8cee9f-997b-420d-8268-aa5b8997dc50" />
